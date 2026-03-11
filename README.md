@@ -25,9 +25,6 @@ Los equipos de Adquisición de Talento pierden hasta un 60% de su tiempo leyendo
 * Generación de correos automáticos de rechazo o de invitación a entrevista.
 
 ---
-**Desarrollado por:** [Tu Nombre]  
-¿Conectamos? [Encuéntrame en LinkedIn](AQUI_PEGA_EL_LINK_DE_TU_LINKEDIN)
+**Desarrollado por:** Nestor Hugo Huanca G  
+¿Conectamos? [Encuéntrame en LinkedIn](https://www.linkedin.com/in/nestorhuanca/)
 
----
-**Desarrollado por:** [Tu Nombre/Usuario]
-¿Conectamos? [Encuéntrame en LinkedIn](AQUI_PEGA_EL_LINK_DE_TU_LINKEDIN)
