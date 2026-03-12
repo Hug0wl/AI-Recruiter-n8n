@@ -9,7 +9,7 @@
         -1824,
         64
       ],
-      "id": "efb14f21-3e3d-4a1d-8f27-0e8464f29c5e",
+      "id": "b19631f5-443e-4613-a05d-9af7f91bb7cf",
       "name": "When clicking ‘Execute workflow’"
     },
     {
@@ -42,7 +42,7 @@
         -1072,
         64
       ],
-      "id": "50729eb9-f8e9-498d-90a4-24b36aabbad8",
+      "id": "d2897a95-336b-4625-b862-e0b30ab4b5c1",
       "name": "Filter"
     },
     {
@@ -61,7 +61,7 @@
         -896,
         64
       ],
-      "id": "83212b27-7a4e-4847-bf1c-b5da8116db84",
+      "id": "bf642ddf-3327-4260-a468-a82b6c9ae2cf",
       "name": "Download file",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -128,7 +128,7 @@
         -704,
         64
       ],
-      "id": "22193d20-a26b-4026-8463-fa4af0eda6a9",
+      "id": "951127f3-43f9-4dc4-bd95-2daed95137d8",
       "name": "Switch"
     },
     {
@@ -142,7 +142,7 @@
         -464,
         -64
       ],
-      "id": "3b5d8357-8fd0-4a70-a51d-acc463332dac",
+      "id": "7bbcebfb-e11e-4114-877d-e1739bed6718",
       "name": "Extract from File"
     },
     {
@@ -156,14 +156,14 @@
         -1120,
         464
       ],
-      "id": "d8e15098-0679-4838-9226-bfc929bf8aac",
+      "id": "633044b1-1ca2-4d65-86df-eed3ed465940",
       "name": "Extract from File1"
     },
     {
       "parameters": {
         "resource": "fileFolder",
         "searchMethod": "query",
-        "queryString": "'TU_ID_DE_CARPETA_AQUI' in parents",
+        "queryString": "'TU_ID' in parents",
         "limit": 1,
         "filter": {},
         "options": {}
@@ -174,7 +174,7 @@
         -1440,
         464
       ],
-      "id": "300b9ea4-050e-4580-b833-4229125efa34",
+      "id": "8b317c04-a2a4-41cd-ae9f-e7b54453ba67",
       "name": "Search files and folders",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -199,7 +199,7 @@
         -1264,
         464
       ],
-      "id": "98407c15-0779-4479-acd4-00b210fcea69",
+      "id": "9ba59455-61eb-449a-8892-6d95c0b84b6a",
       "name": "Download file1",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -232,7 +232,7 @@
         -672,
         464
       ],
-      "id": "080c11f2-9385-4615-a945-1e3775f7a84a",
+      "id": "e907d3a5-9b56-4779-af70-2d4aab4df099",
       "name": "Message a model",
       "credentials": {
         "googlePalmApi": {
@@ -252,14 +252,14 @@
         -960,
         464
       ],
-      "id": "12318964-b932-48f2-bb1e-8471c90db73e",
+      "id": "386e2c9e-c2c6-437f-8986-33dbdc0b59bc",
       "name": "Aggregate"
     },
     {
       "parameters": {
         "documentId": {
           "__rl": true,
-          "value": "TU_ID_DEL_SHEET_AQUI",
+          "value": "TU_ID",
           "mode": "id"
         },
         "sheetName": {
@@ -276,7 +276,7 @@
         -1232,
         64
       ],
-      "id": "b66c7ccf-22a6-4311-8acc-e33d375ff56e",
+      "id": "2cbe2681-ee45-4322-84b6-eb0490b6f846",
       "name": "datos_form",
       "credentials": {
         "googleSheetsOAuth2Api": {
@@ -297,7 +297,7 @@
         -32,
         64
       ],
-      "id": "98fa7684-5cc2-4c38-8f95-753e7bafa1d9",
+      "id": "5d5dd4d9-7c49-4b9c-aec3-7b8559107655",
       "name": "Merge"
     },
     {
@@ -311,7 +311,7 @@
         -464,
         176
       ],
-      "id": "f6249147-1389-45a9-a2ee-584572cd9886",
+      "id": "bc8e80a0-e9c0-4a2a-b77e-7f4cedacb30f",
       "name": "Extract from File2"
     },
     {
@@ -325,10 +325,11 @@
         "messages": {
           "values": [
             {
-              "content": "=Actúa como un Headhunter Senior y Auditor Técnico. Tu misión es evaluar la idoneidad de un candidato cruzando rígidamente 3 fuentes de información.\n\n### REGLAS DE EVALUACIÓN OBLIGATORIAS:\n1. CERO SUPOSICIONES: Si un programa, habilidad técnica (ej. SAP, ERP) o nivel de estudios no está escrito textualmente en el CV o Formulario, asume obligatoriamente que NO lo tiene y penaliza esa sección. No deduzcas por el cargo.\n2. BRECHA DE EXPERIENCIA: Si el candidato no cumple con los años exactos de experiencia mínima solicitada, reduce su puntaje general proporcionalmente. Evalúa el resto de su perfil de forma integral para no estancarlo automáticamente, pero detalla claramente cuántos años le faltan.\n3. ESCALA DE PUNTAJE (0-100):\n   - 90 a 100: Excepcional. Cumple con todo lo obligatorio.\n   - 75 a 89: APTO. Cumple con lo fundamental o tiene un perfil técnico/educativo tan fuerte que compensa la ligera falta de experiencia.\n   - Menor a 75: NO APTO. Le faltan requisitos técnicos críticos, estudios obligatorios o su experiencia es nula/insuficiente.\n4. SUELDO: Cruza la pretensión salarial del candidato con la del mercado y su nivel de ajuste al puesto.\n\n### DATOS DE ENTRADA:\n- PERFIL DEL PUESTO: {{ $('Message a model').item.json.content.parts[0].text }}\n- RESPUESTAS DEL FORMULARIO: {{ JSON.stringify($('datos_form').item.json) }}\n- CV DEL CANDIDATO: {{ $('Extract from File').item.json.text }}\n\n### RESTRICCIÓN DE FORMATO ESTRICTA (CRÍTICO):\nTu respuesta debe ser ÚNICAMENTE un objeto JSON válido y parseable. NO incluyas saludos, explicaciones, ni texto adicional antes ni después. NO uses bloques de código Markdown (como ```json). Devuelve directamente desde la primera llave '{' hasta la última '}'.\n\n### ESTRUCTURA JSON REQUERIDA:\n{\n  \"Formacion_Academica\": \"Resumen crítico de estudios vs perfil. Indica explícitamente si le falta algo.\",\n  \"Resumen_Experiencia\": \"Análisis estratégico. Indica si cumple o cuántos años exactos le faltan frente a lo pedido.\",\n  \"Competencias_Especificas\": \"Menciona qué competencias tiene y cuáles le faltan claramente.\",\n  \"Habilidades_Tecnicas\": \"Menciona qué herramientas domina y cuáles de las obligatorias NO tiene.\",\n  \"Puntaje_IA\": 0,\n  \"Conclusion_IA\": \"Resumen directo de máximo 3 líneas justificando el puntaje y si es APTO (>=75) o NO APTO.\",\n  \"Sueldo_Sugerido\": \"Sueldo sugerido según la evaluación.\"\n}"
+              "content": "={{ $('mater_prompt').first().json.prompt_maestro }}"
             }
           ]
         },
+        "simplify": false,
         "builtInTools": {},
         "options": {}
       },
@@ -338,7 +339,7 @@
         720,
         80
       ],
-      "id": "4473abb3-d96a-40df-b346-82c2ad39ef04",
+      "id": "10fb6e0f-7ec6-47be-bf6c-8a9d36ba196e",
       "name": "Message a model1",
       "credentials": {
         "googlePalmApi": {
@@ -357,12 +358,12 @@
         432,
         64
       ],
-      "id": "5df62956-002f-415b-832c-b524faadbe61",
+      "id": "ab409e79-ff86-48b9-b20e-2371e949a6b2",
       "name": "Loop Over Items"
     },
     {
       "parameters": {
-        "amount": 3
+        "amount": 4
       },
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
@@ -370,15 +371,15 @@
         1248,
         80
       ],
-      "id": "597f8b40-99e7-46e0-b953-6dd9d74b5ad6",
+      "id": "d78def67-6cd0-4265-86e1-50b5510e2dee",
       "name": "Wait",
-      "webhookId": "9fd8c3a2-319d-49b6-877d-de45af8fb4de"
+      "webhookId": "9afc9660-edac-4664-8a73-b3a870fa10fd"
     },
     {
       "parameters": {
         "resource": "fileFolder",
         "searchMethod": "query",
-        "queryString": "'TU_ID_DE_CARPETA_AQUI' in parents",
+        "queryString": "'TU_ID' in parents",
         "filter": {},
         "options": {}
       },
@@ -388,7 +389,7 @@
         -1424,
         64
       ],
-      "id": "73452243-a47c-4b31-bfdc-8e1af4c21103",
+      "id": "83c80420-675c-431e-b064-c5100b02a6d8",
       "name": "Search files and folders1",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -404,7 +405,13 @@
             {
               "id": "a3447f30-bfd5-485b-9c74-cc354a132978",
               "name": "prompt_maestro",
-              "value": "=Actúa como un Headhunter Senior ESTRICTO, pero con criterio de flexibilidad estratégica. Tu misión es evaluar la idoneidad del candidato cruzando 3 fuentes (Perfil, Formulario y CV).\n\nREGLAS DE EVALUACIÓN:\n1. Cero Suposiciones en Herramientas: Si un programa, habilidad técnica (ej. SAP, ERP) o nivel de estudios no está escrito explícitamente en el CV, asume que NO lo tiene y penaliza esa sección.\n2. Filtro de Experiencia Acumulativa: Si el candidato no tiene los años exactos en el cargo principal solicitado (ej. tiene 4 años como Jefe y le piden 5), PERO tiene experiencia previa comprobable en el mismo rubro en cargos inmediatamente inferiores (ej. 3 años como Analista, Supervisor o Coordinador), valora esa línea de carrera, suma esos años para compensar la falta y súbele el puntaje. Solo penalízalo severamente (máximo 0.74 puntos) si la suma de TODA su experiencia en el área es muy inferior a lo pedido.\n3. Criterio del Puntaje (0.00 a 1.00):\n   - 0.90 a 1.00: Candidato excepcional. Cumple con todo lo obligatorio.\n   - 0.75 a 0.89: APTO. Cumple con lo fundamental, compensa la experiencia con roles previos o tiene áreas menores de mejora.\n   - Menor a 0.75: NO APTO. Le faltan requisitos técnicos críticos o su experiencia acumulada no alcanza de ninguna forma.\n4. Sueldo: Cruza la pretensión salarial del candidato con la del mercado y el nivel de ajuste.\n\n--- PERFIL DEL PUESTO ---\n{{ $('Message a model').item.json.content.parts[0].text }}\n\n--- TODAS LAS RESPUESTAS DEL FORMULARIO ---\n{{ JSON.stringify($('datos_form').item.json) }}\n\n--- CURRÍCULUM DEL CANDIDATO ---\n{{ $('Extract from File').item.json.text }}\n\nDevuélveme la evaluación ÚNICAMENTE en formato JSON válido, sin texto adicional antes ni después. Usa exactamente estas llaves:\n{\n  \"Formacion_Academica\": \"Resumen crítico de estudios vs perfil. Indica si le falta algo.\",\n  \"Resumen_Experiencia\": \"Análisis estratégico: Valora los años en el cargo y suma la experiencia en roles previos relacionados. ¿Cumple globalmente?\",\n  \"Competencias_Especificas\": \"Menciona qué competencias tiene y cuáles le faltan claramente.\",\n  \"Habilidades_Tecnicas\": \"Menciona qué herramientas domina y cuáles de las obligatorias NO tiene.\",\n  \"Puntaje_IA\": \"Número del 0 al 100 basado en las nuevas reglas flexibles\",\n  \"Conclusion_IA\": \"Resumen directo de máximo 3 líneas justificando el puntaje y si es APTO (>=70) o NO APTO.\",\n  \"Sueldo_Sugerido\": \"Sueldo sugerido según tu análisis y la pretensión\"\n}",
+              "value": "=Actúa como un Headhunter Senior y Auditor Técnico Estricto, pero con visión estratégica de negocio. Tu misión es evaluar la idoneidad del candidato cruzando rígidamente 3 fuentes de información (Perfil, Formulario y CV). Tu enfoque es analítico y basado 100% en evidencia documental.\n\n[REGLA 0: ANCLAJE DE DATOS]\nTu única fuente de verdad es el texto proporcionado. ESTÁ TERMINANTEMENTE PROHIBIDO inventar, deducir o autocompletar cargos, herramientas o estudios que no estén escritos literalmente. \n\n[REGLAS DE EVALUACIÓN OBLIGATORIAS]\n1. CERO SUPOSICIONES EN HERRAMIENTAS: Si un programa, habilidad técnica (ej. SAP, ERP, Python) o nivel de estudios no está escrito explícitamente en el CV o Formulario, asume obligatoriamente que NO lo tiene y penaliza esa sección. No deduzcas habilidades por el nombre del cargo.\n2. FILTRO DE EXPERIENCIA ACUMULATIVA (LÍNEA DE CARRERA): Si el candidato no tiene los años exactos en el cargo principal solicitado, PERO tiene experiencia previa comprobable en la misma área en cargos inmediatamente inferiores, suma esos años para compensar la falta y valora su línea de carrera.\n3. ESCALA DE PUNTAJE (0 a 100):\n   - 90 a 100: EXCEPCIONAL.\n   - 75 a 89: APTO.\n   - 70 a 74: EN OBSERVACIÓN.\n   - Menor a 70: NO APTO.\n4. SUELDO: Cruza la pretensión salarial del candidato con la del mercado y su nivel de ajuste al puesto.\n\n[DATOS DE ENTRADA]\n--- IDENTIFICADOR ---\n{{ $('datos_form').item.json['Nombres Apellidos'] }}\n--- PERFIL DEL PUESTO ---\n{{ $('Message a model').item.json.content.parts[0].text }}\n--- RESPUESTAS DEL FORMULARIO ---\n{{ JSON.stringify($json) }}\n\n--- CV DEL CANDIDATO ---\n{{ $json.text }}\n\n[RESTRICCIÓN DE FORMATO ESTRICTA - CRÍTICO]\nTu respuesta debe ser ÚNICAMENTE un objeto JSON válido y parseable. NO incluyas saludos, explicaciones, ni texto adicional. Devuelve directamente desde la primera llave '{' hasta la última '}'.\n\n[ESTRUCTURA JSON REQUERIDA]\n{\n  \"ID_Candidato\": \"Copia el texto del IDENTIFICADOR. Si no hay, pon 'Sin ID'.\",\n  \"Analisis_Experiencia_Cuantitativa\": \"Análisis matemático: Suma los años en el cargo principal + los años en roles previos relacionados. Indica el total y si cumple globalmente.\",\n  \"Formacion_Academica\": \"Resumen crítico de estudios vs perfil. Indica explícitamente si le falta algo obligatorio.\",\n  \"Competencias_Especificas\": \"Menciona qué competencias tiene y cuáles le faltan claramente.\",\n  \"Habilidades_Tecnicas\": \"Menciona qué herramientas domina y cuáles de las obligatorias NO tiene.\",\n  \"Puntaje_IA\": 0,\n  \"Conclusion_IA\": \"Resumen directo de máximo 3 líneas justificando el puntaje. Finaliza indicando en mayúsculas: EXCEPCIONAL, APTO, EN OBSERVACIÓN o NO APTO.\"\n}",
+              "type": "string"
+            },
+            {
+              "id": "dd30509a-5340-4253-a724-6c499fa9e287",
+              "name": "",
+              "value": "",
               "type": "string"
             }
           ]
@@ -418,12 +425,13 @@
         192,
         64
       ],
-      "id": "52e7ed3d-33e0-4cce-aca3-80f39df65ab6",
+      "id": "5492df54-debc-460a-bf2f-28fe35aa88d7",
       "name": "mater_prompt"
     },
     {
       "parameters": {
-        "jsCode": "// 1. EL NODO LOOP: Traemos los datos originales\nconst datosCandidato = $('Loop Over Items').item.json;\n\n// 2. LA SALIDA DE LA IA: Usamos la ruta exacta que nos muestra tu nodo de Gemini\nlet textoIA = $input.item.json.content.parts[0].text;\n\n// 3. LIMPIEZA: Quitamos las comillas raras (ahora sí funcionará porque es texto puro)\ntextoIA = textoIA.replace(/```json/g, \"\").replace(/```/g, \"\").trim();\n\nlet datosIA = {};\ntry {\n    // Convertimos a JSON real\n    datosIA = JSON.parse(textoIA);\n} catch (error) {\n    // PROTECCIÓN ANTI-ERRORES\n    datosIA = {\n        \"Conclusion_IA\": \"Error: La IA no devolvió el formato JSON correctamente.\",\n        \"Puntaje_IA\": \"0\"\n    };\n}\n\n// 4. EL JOIN: Pegamos los datos del form con los datos de la IA\nreturn {\n    json: {\n        ...datosCandidato,\n        ...datosIA\n    }\n};"
+        "mode": "runOnceForEachItem",
+        "jsCode": "// 1. EL NODO LOOP: Traemos los datos originales\nconst datosCandidato = $('Loop Over Items').item.json;\n\n// 2. LA SALIDA DE LA IA: Usamos la ruta EXACTA que nos acaba de revelar tu imagen\nlet textoIA = \"\";\nif ($input.item.json.candidates && $input.item.json.candidates[0].content.parts) {\n    textoIA = $input.item.json.candidates[0].content.parts[0].text;\n}\n\n// 3. LIMPIEZA: Quitamos las comillas raras\ntextoIA = textoIA.replace(/```json/g, \"\").replace(/```/g, \"\").trim();\n\nlet datosIA = {};\ntry {\n    // Convertimos a JSON real\n    datosIA = JSON.parse(textoIA);\n} catch (error) {\n    // PROTECCIÓN ANTI-ERRORES\n    datosIA = {\n        \"Conclusion_IA\": \"Error: La IA no devolvió el formato JSON correctamente.\",\n        \"Puntaje_IA\": \"0\",\n        \"Lo_Que_Llego\": textoIA.substring(0, 150)\n    };\n}\n\n// 4. EL JOIN: Pegamos los datos del form con los datos de la IA\nreturn {\n    json: {\n        ...datosCandidato,\n        ...datosIA\n    }\n};"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -431,7 +439,7 @@
         1024,
         80
       ],
-      "id": "ade61fca-8f4c-486c-8ce2-dea63bfa89f3",
+      "id": "4d3231f5-0711-4348-8de2-983ef6694d62",
       "name": "Code in JavaScript"
     },
     {
@@ -446,7 +454,7 @@
         -1088,
         -368
       ],
-      "id": "835a430d-8967-4d02-bba5-8786e45b2a58",
+      "id": "a7ffa23a-cc6f-4564-afd8-481a74d9f19d",
       "name": "Creador_Excel",
       "executeOnce": true,
       "credentials": {
@@ -473,7 +481,7 @@
         },
         "folderId": {
           "__rl": true,
-          "value": "1hLPsVD3bevLINF1EXWObPvrdoO4XIFcp",
+          "value": "\"TU_ID\"",
           "mode": "id"
         }
       },
@@ -483,7 +491,7 @@
         -912,
         -368
       ],
-      "id": "22b862a4-5a30-4b7e-8d77-55f999992260",
+      "id": "7727267c-6c5d-435e-9bb5-3ae6867de918",
       "name": "Move file",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -494,7 +502,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Filtro para que solo pase una vez\nif ($itemIndex > 0) return [];\n\nconst item = $('datos_form').first().json;\nconst titulosBase = Object.keys(item).filter(t => t !== 'row_number');\n\nconst columnasIA = [\n  \"Formacion_Academica\",\n  \"Resumen_Experiencia\",\n  \"Competencias_Especificas\",\n  \"Habilidades_Tecnicas\",\n  \"Puntaje_IA\",\n  \"Conclusion_IA\",\n  \"Sueldo_Sugerido\"\n];\n\nlet filaVacia = {};\n[...titulosBase, ...columnasIA].forEach(t => {\n  // ACÁ ESTÁ LA MAGIA: Le decimos que el valor sea un texto vacío\n  filaVacia[t] = \"\"; \n});\n\nreturn [{ json: filaVacia }];"
+        "jsCode": "// Filtro para que solo pase una vez\nif ($itemIndex > 0) return [];\n\nconst item = $('datos_form').first().json;\nconst titulosBase = Object.keys(item).filter(t => t !== 'row_number');\n\nconst columnasIA = [\n  \"Resumen_Experiencia\",\n  \"Formacion_Academica\",\n  \"Competencias_Especificas\",\n  \"Habilidades_Tecnicas\",\n  \"Puntaje_IA\",\n  \"Conclusion_IA\",\n];\n\nlet filaVacia = {};\n[...titulosBase, ...columnasIA].forEach(t => {\n  // ACÁ ESTÁ LA MAGIA: Le decimos que el valor sea un texto vacío\n  filaVacia[t] = \"\"; \n});\n\nreturn [{ json: filaVacia }];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -502,7 +510,7 @@
         -736,
         -368
       ],
-      "id": "dd81801b-39e7-4ae1-ad68-90042462f18f",
+      "id": "e89f9606-a0ec-4c31-8b5c-ae2bdaac33f6",
       "name": "Code in JavaScript2"
     },
     {
@@ -677,7 +685,7 @@
         -352,
         -368
       ],
-      "id": "36f89853-10bf-4f88-b691-ce8d28b16b28",
+      "id": "f8d4e68a-2f74-4d2d-a484-d806bf851884",
       "name": "Append row in sheet",
       "executeOnce": true,
       "alwaysOutputData": false,
@@ -697,7 +705,7 @@
         -560,
         -368
       ],
-      "id": "a808d952-6378-40db-aa17-b7e118b79457",
+      "id": "aae1be6f-48d1-4a0b-89e3-92f7b8f49c96",
       "name": "Limit",
       "executeOnce": false
     },
@@ -717,7 +725,7 @@
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Nombres Apellidos": "={{ $('Filter').item.json['Nombres Apellidos'] }}",
+            "Nombres Apellidos": "={{ $('datos_form').item.json['Nombres Apellidos'] }}",
             "CV": "={{ $('Filter').item.json.CV }}",
             "Sueldo": "={{ $('Filter').item.json.Sueldo }}",
             "Pregunta 1": "={{ $('Filter').item.json['Pregunta 1'] }}",
@@ -725,11 +733,11 @@
             "Pregunta 3": "={{ $('Filter').item.json['Pregunta 3'] }}",
             "Pregunta 4": "={{ $('Filter').item.json['Pregunta 4'] }}",
             "Formacion_Academica": "={{ $json.Formacion_Academica }}",
-            "Resumen_Experiencia": "={{ $json.Resumen_Experiencia }}",
-            "Competencias_Especificas": "={{ $json.Competencias_Especificas }}",
+            "Resumen_Experiencia": "={{ $json.Analisis_Experiencia_Cuantitativa }}",
             "Habilidades_Tecnicas": "={{ $json.Habilidades_Tecnicas }}",
             "Puntaje_IA": "={{ $json.Puntaje_IA }}",
-            "Conclusion_IA": "={{ $json.Conclusion_IA }}"
+            "Conclusion_IA": "={{ $json.Conclusion_IA }}",
+            "Competencias_Especificas": "={{ $json.Competencias_Especificas }}"
           },
           "matchingColumns": [],
           "schema": [
@@ -804,8 +812,8 @@
               "removed": false
             },
             {
-              "id": "Formacion_Academica",
-              "displayName": "Formacion_Academica",
+              "id": "Resumen_Experiencia",
+              "displayName": "Resumen_Experiencia",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -814,8 +822,8 @@
               "removed": false
             },
             {
-              "id": "Resumen_Experiencia",
-              "displayName": "Resumen_Experiencia",
+              "id": "Formacion_Academica",
+              "displayName": "Formacion_Academica",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -862,116 +870,6 @@
               "type": "string",
               "canBeUsedToMatch": true,
               "removed": false
-            },
-            {
-              "id": "Sueldo_Sugerido",
-              "displayName": "Sueldo_Sugerido",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "numpages",
-              "displayName": "numpages",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "numrender",
-              "displayName": "numrender",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "info",
-              "displayName": "info",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "text",
-              "displayName": "text",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "version",
-              "displayName": "version",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "content",
-              "displayName": "content",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "finishReason",
-              "displayName": "finishReason",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "index",
-              "displayName": "index",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "prompt_maestro",
-              "displayName": "prompt_maestro",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "metadata",
-              "displayName": "metadata",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
             }
           ],
           "attemptToConvertTypes": false,
@@ -985,7 +883,7 @@
         608,
         -192
       ],
-      "id": "1b75137a-b0d3-416b-95a7-6a441b0c81d2",
+      "id": "568e4a7c-3ca5-4219-a7e0-9d8c34e74ce0",
       "name": "Append row in sheet1",
       "credentials": {
         "googleSheetsOAuth2Api": {
@@ -1286,11 +1184,11 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "15cd1dae-3bd1-44a3-aebe-155bffe78b50",
+  "versionId": "704f9c34-45de-4a2d-931a-8b0a10830f68",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f42a30821018727e946b0946064759a4fd89f3402f42f12ddd7b34b47c19b987"
   },
-  "id": "B3YiEW34zFhYKKGM",
+  "id": "cUy8wETvHzLmRP2C",
   "tags": []
 }
